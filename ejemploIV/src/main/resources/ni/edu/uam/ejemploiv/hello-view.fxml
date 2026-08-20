@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER_LEFT" spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.ejemploiv.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label text="Ingrese salario del empleado:" />
+        <TextField fx:id="txtSalario" promptText="0.00" />
+        <HBox spacing="10.0">
+            <children>
+                <Button onAction="#onAgregarClick" text="Agregar" />
+                <Button onAction="#onReiniciarClick" text="Reiniciar" />
+            </children>
+        </HBox>
+        <Label fx:id="lblCantidad" text="Empleados registrados: 0" />
+        <Label fx:id="lblAlto" text="Más alto: $0.0" />
+        <Label fx:id="lblBajo" text="Más bajo: $0.0" />
+        <Label fx:id="lblPromedio" text="Promedio: $0.0" />
+        <Label fx:id="lblModa" text="Moda: $0.0" />
+    </children>
+</VBox>
